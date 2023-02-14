@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "bookstore"
+version = "0.1.0"
+description = ""
+authors = ["Rayanne pessoal <mouraribeiro11@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = "^7.2.1"
+factory-boy = "^3.2.1"
+django = "^4.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
