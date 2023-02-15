@@ -1,14 +1,13 @@
 import factory
 
-from products.models import Product
-from products.models import Category
+from products.models import Category, Product
 
 
 class CategoryFactory(factory.django.DjangoModelFactory):
     title = factory.Faker('pystr')
     slug = factory.Faker('pystr')
     description = factory.Faker('pystr')
-    active = factory.iterator([True, False])
+    active = factory.Iterator([True, False])
 
     class Meta:
         model = Category
