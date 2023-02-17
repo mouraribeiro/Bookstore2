@@ -17,7 +17,7 @@ class OrderSerializer(serializers.ModelSerializer):
 
 class Meta:
     model = Product
-    fields = ['product', 'total', 'products_1']
+    fields = "__all__"
     extra_kwargs = {'products': {'required': False}}
 
     def create(self, validated_data):
