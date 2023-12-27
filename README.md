@@ -1,3 +1,3 @@
 # Bookstore2
 
-API em Python
+API em Python com Django Rest Framework
